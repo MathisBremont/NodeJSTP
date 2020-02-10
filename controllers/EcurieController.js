@@ -3,7 +3,7 @@ let model = require('../models/ecurie.js');
    // //////////////////////// L I S T E R  E C U R I E S
 
 module.exports.ListerEcurie = function(request, response){
-   response.title = 'Liste des écuries';
+    response.title = 'Liste des écuries';
     model.getListeEcurie( function (err, result) {
         if (err) {
             // gestion de l'erreur
@@ -12,6 +12,6 @@ module.exports.ListerEcurie = function(request, response){
         }
         response.listeEcurie = result;
         //console.log(result);
-response.render('listerEcurie', response);
-});
+        response.render('listerEcurie', response);
+    });
 }
