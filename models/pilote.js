@@ -22,7 +22,7 @@ module.exports.getNomPilote = function(callback){
         if(!err){
             // s'il n'y a pas d'erreur de connexion
             // execution de la requête SQL
-            let sql ="select pilnom from pilote order by pilnom";
+            let sql ="select pilnom, phoadresse from pilote p inner join photo ph on ph.pilnum=p.pilnum order by pilnom";
             //console.log (sql);
             connexion.query(sql, callback);
 

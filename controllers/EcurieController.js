@@ -14,4 +14,5 @@ module.exports.ListerEcurie = function(request, response){
         //console.log(result);
 response.render('listerEcurie', response);
 });
-}
+};
+
