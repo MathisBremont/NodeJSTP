@@ -1,13 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ddb75b33-1611-425a-8bcf-c9ca401e7ab7" name="Default" comment="Accueil">
-      <change afterPath="$PROJECT_DIR$/views/listerPilotes.handlebars" afterDir="false" />
+    <list default="true" id="ddb75b33-1611-425a-8bcf-c9ca401e7ab7" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/models/pilote.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/resultat.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/Partials/listerPremiereLettreNomPilote.handlebars" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controllers/EcurieController.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/EcurieController.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/HomeController.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/HomeController.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/controllers/PiloteController.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/PiloteController.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/pilote.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/pilote.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/router/router.js" beforeDir="false" afterPath="$PROJECT_DIR$/router/router.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/home.handlebars" beforeDir="false" afterPath="$PROJECT_DIR$/views/home.handlebars" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/repertoirePilotes.handlebars" beforeDir="false" afterPath="$PROJECT_DIR$/views/repertoirePilotes.handlebars" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -97,76 +100,51 @@
       <workItem from="1580745944309" duration="888000" />
       <workItem from="1580800120136" duration="2948000" />
       <workItem from="1581337898362" duration="288000" />
-      <workItem from="1581339600759" duration="5944000" />
+      <workItem from="1581339600759" duration="278000" />
     </task>
-    <task id="LOCAL-00001" summary="Accueil">
-      <created>1581339959966</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1581339959966</updated>
-    </task>
-    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value="Accueil" />
-    <option name="LAST_COMMIT_MESSAGE" value="Accueil" />
-  </component>
   <component name="WindowStateProjectService">
-    <state x="613" y="29" key="CommitChangelistDialog2" timestamp="1581339959188">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="613" y="29" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1581339959188" />
     <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1580741861720">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1580741861720" />
-    <state width="1899" height="152" key="GridCell.Tab.0.bottom" timestamp="1581403234460">
+    <state width="1899" height="152" key="GridCell.Tab.0.bottom" timestamp="1581339890692">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1515" height="118" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1580802323015" />
-    <state width="1899" height="152" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1581403234460" />
-    <state width="1899" height="152" key="GridCell.Tab.0.center" timestamp="1581403234460">
+    <state width="1899" height="152" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1581339890692" />
+    <state width="1899" height="152" key="GridCell.Tab.0.center" timestamp="1581339890692">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1515" height="118" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1580802323014" />
-    <state width="1899" height="152" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1581403234460" />
-    <state width="1899" height="152" key="GridCell.Tab.0.left" timestamp="1581403234460">
+    <state width="1899" height="152" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1581339890692" />
+    <state width="1899" height="152" key="GridCell.Tab.0.left" timestamp="1581339890691">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1515" height="118" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1580802323014" />
-    <state width="1899" height="152" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1581403234460" />
-    <state width="1899" height="152" key="GridCell.Tab.0.right" timestamp="1581403234460">
+    <state width="1899" height="152" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1581339890691" />
+    <state width="1899" height="152" key="GridCell.Tab.0.right" timestamp="1581339890692">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1515" height="118" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1580802323015" />
-    <state width="1899" height="152" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1581403234460" />
+    <state width="1899" height="152" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1581339890692" />
     <state x="277" y="54" key="SettingsEditor" timestamp="1580741365761">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="277" y="54" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1580741365761" />
-    <state x="451" y="183" key="Vcs.Push.Dialog.v2" timestamp="1581408604929">
+    <state x="451" y="183" key="Vcs.Push.Dialog.v2" timestamp="1581339931263">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1581338102728" />
-    <state x="451" y="183" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1581408604929" />
-    <state x="756" y="300" key="git4idea.merge.GitMergeDialog" timestamp="1581408586485">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="756" y="300" key="git4idea.merge.GitMergeDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1581408586485" />
-    <state x="675" y="294" key="git4idea.merge.GitPullDialog" timestamp="1581408521211">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="675" y="294" key="git4idea.merge.GitPullDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1581408521211" />
-    <state x="718" y="348" width="382" height="317" key="git4idea.rebase.GitRebaseDialog" timestamp="1581340632332">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="451" y="183" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1581339931263" />
+    <state x="574" y="276" key="git4idea.rebase.GitRebaseDialog" timestamp="1581338214902">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="574" y="276" key="git4idea.rebase.GitRebaseDialog/0.0.1536.824@0.0.1536.824" timestamp="1581338214902" />
-    <state x="718" y="348" width="382" height="317" key="git4idea.rebase.GitRebaseDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1581340632332" />
     <state x="705" y="287" key="search.everywhere.popup" timestamp="1581339736077">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
