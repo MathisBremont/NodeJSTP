@@ -11,7 +11,7 @@ module.exports.getDerniersResultats = function (callback) {
                 " FROM grandprix g " +
                 "INNER JOIN circuit c ON g.cirnum=c.cirnum " +
                 "INNER JOIN pays p ON p.paynum=c.paynum " +
-                "where gpdatemaj = (select max(gpdatemaj) from grandprix)" +
+                "where YEAR(gpdatemaj) = (select max(YEAR(gpdatemaj)) from grandprix)" +
                 "ORDER BY gpnom";
             console.log (sql);
             connexion.query(sql, callback);
