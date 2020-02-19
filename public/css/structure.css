@@ -68,3 +68,11 @@
    max-height: 40%;
    max-width: 40%;
 }
+
+ .imagePiloteBtn{
+	 width: 150px;
+	 height: 150px;
+ }
+.lettre{
+	letter-spacing: 1em;
+}

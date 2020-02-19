@@ -1,5 +1,8 @@
-{{> repertoirePilotes}}
+{{> listerPremiereLettreNomPilote}}
+<div class="profilPilote" align="center">
+    {{#each data}}
+        <img class="imagePiloteBtn" src="/image/pilote/{{this.phoadresse}}"/>
+        <a class="nomPilote" href="/detailPilote/{{this.pilnum}}">{{this.pilprenom}} {{this.pilnom}}</a>
+    {{/each}}
 
-{{#each data}}
-    <p><a href="/listerPilotes/">{{this.pilnom}}</a></p>
-{{/each}}
+</div>
