@@ -41,7 +41,6 @@ module.exports.ListerPilotes = function(request, response){
             }
             response.premiereLettre = result[0];
             response.preProfilSelonLaPremiereLettre = result[1];
-            console.log(response.preProfilSelonLaPremiereLettre);
             response.render('listerPilotes', response);
         }
     )
@@ -87,6 +86,7 @@ module.exports.DetailDuPilote = function (request, response) {
             }
             response.premiereLettre = result[0];
             response.detailDuPilote = result[1][0];
+            console.log(response.detailDuPilote);
             //mettre [0] fait qu'on ne crée pas un tableau des résulttast qui sont retournés
             //On utilise [0] quand on retourne une seule valeur pour eviter de faire un #each detailDuPilote dans detailDuPilote.handlebars
 
