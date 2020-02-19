@@ -76,3 +76,17 @@
 .lettre{
 	letter-spacing: 1em;
 }
+
+.imgProfilPilote{
+	width: 110px;
+	height: 110px;
+}
+
+.longTextPilote{
+	text-align: justify;
+}
+
+.listeImagesPilote{
+	width: 150px;
+	height: 150px;
+}

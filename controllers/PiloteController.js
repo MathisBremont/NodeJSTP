@@ -1,5 +1,8 @@
+
+
 let model = require('../models/pilote.js');
 let async = require('async');
+const {getNomPrenomAvecNum} = require("../models/pilote");
 // ///////////////////////// R E P E R T O I R E    D E S    P I L O T E S
 
 module.exports.Repertoire = function(request, response){
@@ -37,7 +40,8 @@ module.exports.ListerPilotes = function(request, response){
                 return;
             }
             response.premiereLettre = result[0];
-            response.data = result[1];
+            response.preProfilSelonLaPremiereLettre = result[1];
+            console.log(response.preProfilSelonLaPremiereLettre);
             response.render('listerPilotes', response);
         }
     )
@@ -47,6 +51,7 @@ module.exports.ListerPilotes = function(request, response){
 
 //TODO ce n'est que le début pour afficher le detail du pilote.
 module.exports.DetailDuPilote = function (request, response) {
+
     let data = request.params.pilnum;
     async.parallel([
             function (callback) {
@@ -55,7 +60,24 @@ module.exports.DetailDuPilote = function (request, response) {
                 });
             },
             function (callback) {
-                //faire l'appel à la methode et ecrire la methode dans pilote.js avec 3 requete sql 
+                model.getDetailsPilote(data, function(errE, resE){
+                    callback(null, resE);
+                });
+            },
+            function(callback){
+                model.getSponsorsPilote(data, function(errE, resE){
+                    callback(null, resE);
+                });
+            },
+            function(callback){
+                model.getNomPrenomAvecNum(data, function(errE, resE){
+                    callback(null, resE);
+                });
+            },
+            function(callback){
+                model.getImagesDuPilote(data, function(errE, resE){
+                    callback(null, resE);
+                });
             },
         ],
         function (err, result) {
@@ -64,8 +86,14 @@ module.exports.DetailDuPilote = function (request, response) {
                 return;
             }
             response.premiereLettre = result[0];
-            response.detailDuPilote = result[1];
-            response.title = 'La page concernant ' + data; // le mettre a la fin pour recupérer entre temps le nom et prénom du gars
+            response.detailDuPilote = result[1][0];
+            //mettre [0] fait qu'on ne crée pas un tableau des résulttast qui sont retournés
+            //On utilise [0] quand on retourne une seule valeur pour eviter de faire un #each detailDuPilote dans detailDuPilote.handlebars
+
+            response.listeSponsors = result[2];
+            response.identite = result[3];
+            response.imagesPilote = result[4];
+            response.title = 'La page concernant ' + result[3];
             response.render('detailDuPilote', response);
         }
     )
