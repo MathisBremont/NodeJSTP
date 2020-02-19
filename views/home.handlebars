@@ -1,5 +1,11 @@
-<p align="center"><u>DERNIERS RESULTATS</u></p>
+<table class="dernierResTab" align="center" style="border : 1px solid black;">
+    <td>
+        <p align="center"><u>DERNIERS RESULTATS</u></p>
 
-<p align="center" ><b>{{derniersResultats.gpnom}} du {{derniersResultats.daydate}}/{{derniersResultats.monthdate}}/{{derniersResultats.yeardate}}</b></p>
-    <p align="center">Mise à jour le : {{derniersResultats.daymaj}}/{{derniersResultats.monthmaj}}/{{derniersResultats.yearmaj}}</p>
-    <p align="center"><a href="/resultats" >Voir les résultats</a></p>
+        <div class="dernierRes">
+            <p><b>{{derniersResultats.gpnom}} du {{formatDate derniersResultats.gpdate 'DD/MM/YYYY'}}</b></p>
+            <p>Mise à jour le : {{formatDate derniersResultats.gpdatemaj 'DD/MM/YYYY'}}</p>
+            <p><a href="/resultats">Voir les résultats</a></p>
+        </div>
+    </td>
+</table>

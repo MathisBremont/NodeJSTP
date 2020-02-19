@@ -90,3 +90,25 @@
 	width: 150px;
 	height: 150px;
 }
+
+.dernierResTab{
+	border-radius:10px;
+}
+.dernierRes{
+	padding-left : 10px;
+	padding-right : 10px;
+	line-height:5px;
+}
+
+.sponsor{
+	line-height:5px;
+}
+
+.imagesDuPilote{
+	display: flex;
+	justify-content: space-between;
+}
+
+.poidEtTaille{
+	padding-left: 30px;
+}
