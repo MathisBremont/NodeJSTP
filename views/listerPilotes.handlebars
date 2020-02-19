@@ -1,8 +1,8 @@
 {{> listerPremiereLettreNomPilote}}
 <div class="profilPilote" align="center">
-    {{#each data}}
+    {{#each preProfilSelonLaPremiereLettre}}
         <img class="imagePiloteBtn" src="/image/pilote/{{this.phoadresse}}"/>
-        <a class="nomPilote" href="/detailPilote/{{this.pilnum}}">{{this.pilprenom}} {{this.pilnom}}</a>
+        <a class="nomPilote" href="/detailDuPilote/{{this.pilnum}}">{{this.pilprenom}} {{this.pilnom}}</a>
     {{/each}}
 
 </div>

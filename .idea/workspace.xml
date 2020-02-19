@@ -1,15 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ddb75b33-1611-425a-8bcf-c9ca401e7ab7" name="Default" comment="add partial">
-      <change afterPath="$PROJECT_DIR$/views/detailDuPilote.handlebars" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/photoPilote.handlebars" afterDir="false" />
+    <list default="true" id="ddb75b33-1611-425a-8bcf-c9ca401e7ab7" name="Default" comment="vue partielle ajouté">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/controllers/PiloteController.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/PiloteController.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/models/pilote.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/pilote.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/css/structure.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/structure.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/router/router.js" beforeDir="false" afterPath="$PROJECT_DIR$/router/router.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/Partials/listerPremiereLettreNomPilote.handlebars" beforeDir="false" afterPath="$PROJECT_DIR$/views/Partials/listerPremiereLettreNomPilote.handlebars" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/detailDuPilote.handlebars" beforeDir="false" afterPath="$PROJECT_DIR$/views/detailDuPilote.handlebars" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/views/listerPilotes.handlebars" beforeDir="false" afterPath="$PROJECT_DIR$/views/listerPilotes.handlebars" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -102,50 +100,68 @@
       <workItem from="1581337898362" duration="288000" />
       <workItem from="1581339600759" duration="278000" />
       <workItem from="1581930309882" duration="6845000" />
+      <workItem from="1582112672668" duration="1044000" />
+      <workItem from="1582113986550" duration="8757000" />
     </task>
+    <task id="LOCAL-00001" summary="vue partielle ajouté">
+      <created>1582112929294</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1582112929294</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="vue partielle ajouté" />
+    <option name="LAST_COMMIT_MESSAGE" value="vue partielle ajouté" />
+  </component>
   <component name="WindowStateProjectService">
+    <state x="613" y="29" key="CommitChangelistDialog2" timestamp="1582112928430">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="613" y="29" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1582112928430" />
     <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1580741861720">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1580741861720" />
-    <state x="818" y="421" key="Github.Dialog.Accounts.Choose" timestamp="1581408748829">
+    <state x="818" y="421" key="Github.Dialog.Accounts.Choose" timestamp="1582113212481">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="818" y="421" key="Github.Dialog.Accounts.Choose/0.0.1920.1040@0.0.1920.1040" timestamp="1581408748829" />
-    <state width="949" height="152" key="GridCell.Tab.0.bottom" timestamp="1581937166185">
+    <state x="818" y="421" key="Github.Dialog.Accounts.Choose/0.0.1920.1040@0.0.1920.1040" timestamp="1582113212481" />
+    <state width="1899" height="152" key="GridCell.Tab.0.bottom" timestamp="1582122530241">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1515" height="118" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1580802323015" />
-    <state width="949" height="152" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1581937166185" />
-    <state width="949" height="152" key="GridCell.Tab.0.center" timestamp="1581937166185">
+    <state width="1899" height="152" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1582122530241" />
+    <state width="1899" height="152" key="GridCell.Tab.0.center" timestamp="1582122530241">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1515" height="118" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1580802323014" />
-    <state width="949" height="152" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1581937166185" />
-    <state width="949" height="152" key="GridCell.Tab.0.left" timestamp="1581937166185">
+    <state width="1899" height="152" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1582122530241" />
+    <state width="1899" height="152" key="GridCell.Tab.0.left" timestamp="1582122530241">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1515" height="118" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1580802323014" />
-    <state width="949" height="152" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1581937166185" />
-    <state width="949" height="152" key="GridCell.Tab.0.right" timestamp="1581937166185">
+    <state width="1899" height="152" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1582122530241" />
+    <state width="1899" height="152" key="GridCell.Tab.0.right" timestamp="1582122530241">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1515" height="118" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1580802323015" />
-    <state width="949" height="152" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1581937166185" />
+    <state width="1899" height="152" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1582122530241" />
     <state x="277" y="54" key="SettingsEditor" timestamp="1580741365761">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="277" y="54" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1580741365761" />
-    <state x="451" y="183" key="Vcs.Push.Dialog.v2" timestamp="1582112891126">
+    <state x="451" y="183" key="Vcs.Push.Dialog.v2" timestamp="1582113206851">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1581338102728" />
-    <state x="451" y="183" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1582112891126" />
+    <state x="451" y="183" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1582113206851" />
     <state x="675" y="294" key="git4idea.merge.GitPullDialog" timestamp="1582112880237">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -155,6 +171,10 @@
     </state>
     <state x="574" y="276" key="git4idea.rebase.GitRebaseDialog/0.0.1536.824@0.0.1536.824" timestamp="1581338214902" />
     <state x="718" y="348" key="git4idea.rebase.GitRebaseDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1582112763033" />
+    <state x="616" y="240" key="run.anything.popup" timestamp="1582119069975">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="616" y="240" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1582119069975" />
     <state x="705" y="287" key="search.everywhere.popup" timestamp="1581339736077">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

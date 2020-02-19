@@ -1,0 +1,32 @@
+{{> listerPremiereLettreNomPilote}}
+<table>
+    <td>
+        <img class="imgProfilPilote" src="/image/pilote/{{detailDuPilote.phoadresse}}"/>
+    </td>
+    <td>
+        <p><b>Nom :</b> {{detailDuPilote.pilnom}} {{detailDuPilote.pilprenom}}</p>
+        <p><b>Date de naissance :</b> {{formatDate detailDuPilote.pildatenais 'dddd DD MMMM YYYY'}}</p>
+
+        <p><b>Nationalité :</b> {{detailDuPilote.paynom}}</p>
+        <p><b>Ecurie :</b> {{detailDuPilote.ecunom}}</p>
+    </td>
+    <td>
+        <p><b>Poids :</b> {{detailDuPilote.pilpoids}} Kg</p>
+        <p><b>Taille :</b> {{detailDuPilote.piltaille}} Cm</p>
+    </td>
+</table>
+
+<p><b>Principaux sponsors :</b></p>
+{{#each listeSponsors}}
+    <p><b>{{this.sponom}}</b> ({{this.sposectactivite}})</p>
+{{/each}}
+
+<div class="longTextPilote">
+<p><b>Qui suis-je? :</b> {{detailDuPilote.piltexte}}</p>
+</div>
+
+<br/><br/>
+
+{{#each imagesPilote}}
+    <img class="listeImagesPilote" src="/image/pilote/{{this.phoadresse}}"/>
+{{/each}}
