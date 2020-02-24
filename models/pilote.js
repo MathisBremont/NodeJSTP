@@ -38,7 +38,7 @@ module.exports.getDetailsPilote = function(data, callback){
 
             // s'il n'y a pas d'erreur de connexion
             // execution de la requête SQL
-            let sql ="select p.pilnum, pilnom, pilprenom, pildatenais, pilpoids, piltaille, phoadresse, piltexte, paynom, ecunom from pilote p inner join photo ph on ph.pilnum=p.pilnum inner join pays pa on pa.paynum=p.paynum inner join ecurie e on e.ecunum=p.ecunum where p.pilnum ="+ data +" and phonum = 1";
+            let sql ="select p.pilnum, pilnom, pilprenom, pildatenais, pilpoids, piltaille, phoadresse, piltexte, paynom, ecunom from pilote p left join photo ph on ph.pilnum=p.pilnum left join pays pa on pa.paynum=p.paynum left join ecurie e on e.ecunum=p.ecunum where p.pilnum ="+ data +" and phonum = 1";
             //console.log (sql);
             connexion.query(sql, callback);
 
