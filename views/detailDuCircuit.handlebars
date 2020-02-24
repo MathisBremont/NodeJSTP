@@ -1,0 +1,20 @@
+
+
+<table>
+    <td>
+        <img class="imgProfilPilote" src="/image/circuit/{{detailDuCircuit.ciradresseimage}}"/>
+    </td>
+    <td>
+        <p><b>Nom :</b> {{detailDuCircuit.cirnom}}</p>
+        <p><b>Longueur :</b> {{detailDuCircuit.cirlongueur}}</p>
+        <p><b>Nombre de spectateurs :</b> {{detailDuCircuit.cirnbspectateurs}}</p>
+        <p><b>Pays :</b> {{detailDuCircuit.paynom}}</p>
+    </td>
+    <td>
+        {{>listerCircuits}}
+    </td>
+</table>
+
+<div class="longTextPilote">
+    <p> {{detailDuCircuit.cirtext}}</p>
+</div>
