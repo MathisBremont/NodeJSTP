@@ -20,22 +20,25 @@ module.exports.ListerCircuit = function (request, response) {
 }
 
 module.exports.DetailsDuCircuit = function (request, response) {
-
     let data = request.params.cirnum;
-
-    model.getDetailsCircuit(data, function (err, result) {
-
+    async.parallel([
+            function (callback) {
+                model.getDetailsCircuit(data,function (err, result) {
+                    callback(null, result)
+                });
+            },
+            function (callbcak) {
+                model.getNomCircuit(data, (function (errE, resE) {
+                    callbcak(null, resE)
+                }));
+            },
+        ],
+        function (err, result) {
             if (err) {
-                // gestion de l'erreur
                 console.log(err);
                 return;
             }
-            response.detailDuCircuit = result;
-
-
-           console.log(result);
-
-            response.title = 'La page concernant ';
+            response.detailDuCircuit = result[0][0];
             response.render('detailDuCircuit', response);
         }
     )
