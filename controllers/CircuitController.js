@@ -32,8 +32,8 @@ module.exports.DetailsDuCircuit = function (request, response) {
             }
             response.detailDuCircuit = result;
 
-            console.log(data);
-            console.log(result);
+
+           console.log(result);
 
             response.title = 'La page concernant ';
             response.render('detailDuCircuit', response);

@@ -9,19 +9,30 @@
         <p><b>Date de naissance :</b> {{formatDate detailDuPilote.pildatenais 'dddd DD MMMM YYYY'}}</p>
 
         <p><b>Nationalité :</b> {{detailDuPilote.paynom}}</p>
-        <p><b>Ecurie :</b> {{detailDuPilote.ecunom}}</p>
+        {{#if this.ecunom}}
+            <p><b>Ecurie :</b> {{detailDuPilote.ecunom}}</p>
+        {{else}}
+            <p><b>Ecurie :</b> Pas d'écurie cette année</p>
+        {{/if}}
+
     </td>
     <td class="poidEtTaille">
+
         <p><b>Poids :</b> {{detailDuPilote.pilpoids}} Kg</p>
         <p><b>Taille :</b> {{detailDuPilote.piltaille}} Cm</p>
+
+
     </td>
 </table>
 
 <div class="sponsor">
-    <p><b>Principaux sponsors :</b></p>
-    {{#each listeSponsors}}
-        <p><b>{{this.sponom}}</b> ({{this.sposectactivite}})</p>
-    {{/each}}
+    {{#if listeSponsors}}
+        <p><b>Principaux sponsors :</b></p>
+        {{#each listeSponsors}}
+            <p><b>{{this.sponom}}</b> ({{this.sposectactivite}})</p>
+        {{/each}}
+    {{/if}}
+
 </div>
 
 <br/>

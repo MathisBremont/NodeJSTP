@@ -11,7 +11,7 @@ module.exports.ListerResultat = function(request, response){
 			return;
 		}
 		response.listeResultat = result;
-		//console.log(result);
+		console.log(result);
 		response.render('listerResultat', response);
 	});
 }
