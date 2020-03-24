@@ -28,3 +28,47 @@ module.exports.getListeEcurie = function (callback) {
          }
       });
 };
+
+module.exports.getInfoEcurie = function(data, callback){
+    db.getConnection(function(err, connexion){
+        if(!err){
+            let sql = "select ecunom, ecunomdir, ecuadrsiege, ecuadresseimage, fpnom, paynom from ecurie e left join pays p on p.paynum=e.paynum left join fourn_pneu fp on fp.fpnum=e.fpnum where ecunum="+data;
+
+            connexion.query(sql, callback);
+            connexion.release();
+        }
+    })
+};
+
+module.exports.getPilotesLieAEcurie = function(data, callback){
+    db.getConnection(function(err, connexion){
+        if(!err){
+            let sql = "select pilnom, pilprenom from pilote p inner join ecurie e on e.ecunum=p.ecunum where e.ecunum="+data;
+
+            connexion.query(sql, callback);
+            connexion.release();
+        }
+    })
+};
+
+module.exports.getVoituresLieAEcurie = function(data, callback){
+    db.getConnection(function(err, connexion){
+        if(!err){
+            let sql = "select typelibelle, voinom, voiadresseimage from ecurie e inner join voiture v on v.ecunum=e.ecunum inner join type_voiture tv on tv.typnum=v.typnum where e.ecunum="+data;
+
+            connexion.query(sql, callback);
+            connexion.release();
+        }
+    })
+};
+
+module.exports.getFournisseurPneus = function(data, callback){
+    db.getConnection(function(err, connexion){
+        if(!err){
+            let sql = "select fpnom from ecurie e inner join fourn_pneu fp on fp.fpnum=e.fpnum where e.ecunum="+data;
+
+            connexion.query(sql, callback);
+            connexion.release();
+        }
+    })
+};

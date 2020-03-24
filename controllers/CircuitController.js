@@ -27,10 +27,10 @@ module.exports.DetailsDuCircuit = function (request, response) {
                     callback(null, result)
                 });
             },
-            function (callbcak) {
-                model.getNomCircuit(data, (function (errE, resE) {
-                    callbcak(null, resE)
-                }));
+            function (callback){
+                    model.getListeCircuits(function (err, result) {
+                        callback(null, result)
+                    });
             },
         ],
         function (err, result) {
@@ -39,6 +39,7 @@ module.exports.DetailsDuCircuit = function (request, response) {
                 return;
             }
             response.detailDuCircuit = result[0][0];
+            response.listeCircuit = result[1];
             response.render('detailDuCircuit', response);
         }
     )

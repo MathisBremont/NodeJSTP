@@ -16,13 +16,13 @@ module.exports = function (app) {
     app.get('/listerPilotes/:lettre', PiloteController.ListerPilotes);
     app.get('/detailDuPilote/:pilnum', PiloteController.DetailDuPilote);
 
-
     // circuits
     app.get('/circuits', CircuitController.ListerCircuit);
     app.get('/detailDuCircuit/:cirnum', CircuitController.DetailsDuCircuit);
 
 // Ecuries
     app.get('/ecuries', EcurieController.ListerEcurie);
+    app.get('/detailEcurie/:ecunum', EcurieController.DetailEcurie);
 
     //Résultats
     app.get('/resultats', ResultatController.ListerResultat);
