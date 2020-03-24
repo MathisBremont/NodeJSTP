@@ -25,10 +25,12 @@
         {{/each}}
     </p>
     <br/>
-    {{#each listeVoituresEcurie}}
-        <img class="listeImageVoiture" src="/image/ecurie/voiture/{{this.voiadresseimage}}"/>
-        <p>{{this.voinom}} <br/> {{this.typelibelle}}</p>
-    {{/each}}
+    <div class="listeImagesVoitures">
+        {{#each listeVoituresEcurie}}
+            <p><img class="listeImagesVoitures" src="/image/ecurie/voiture/{{this.voiadresseimage}}"/> <br/>{{this.voinom}} <br/> {{this.typelibelle}}</p>
+        {{/each}}
+    </div>
+
 {{else}}
     <p>Cette écurie ne participe pas au championnat cette année</p>
 {{/if}}

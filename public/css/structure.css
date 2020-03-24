@@ -40,6 +40,24 @@
 		width: 40px;
 	}
 
+	.resultats{
+
+		width: 50%;
+		text-align : center;
+
+	}
+
+	.resultats td{
+		width: 100px;
+		border: 1px solid black;
+
+	}
+
+	.resultats th{
+		font-weight: bold;
+		border: 1px solid black;
+	}
+
   #menu {
     text-align: center;
   }
@@ -118,7 +136,9 @@
 	height: 150px;
 }
 
-.listeImageVoiture{
+.listeImagesVoitures{
 	width: 150px;
 	height: 150px;
+	display:inline-flex;
+	margin-right:20px;
 }

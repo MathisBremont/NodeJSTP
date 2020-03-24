@@ -1,0 +1,34 @@
+<table class="resultats">
+    <tr>
+        <th>
+            <p>Place</p>
+        </th>
+        <th>
+            <p>Pilote</p>
+        </th>
+        <th>
+            <p>Temps</p>
+        </th>
+        <th>
+            <p>Nb points</p>
+        </th>
+    </tr>
+    {{#each detailDuResultat}}
+        <tr>
+            <td>
+                <p>{{this.salut}}</p>
+            </td>
+            <td>
+                <p>{{this.pilnom}} {{this.pilprenom}}</p>
+            </td>
+            <td>
+                <p>{{this.tempscourse}}</p>
+            </td>
+            <td>
+                <p>{{this.points}}</p>
+            </td>
+        </tr>
+    {{/each}}
+
+</table>
+<br class="myboth"/>

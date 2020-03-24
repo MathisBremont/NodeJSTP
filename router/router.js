@@ -26,6 +26,7 @@ module.exports = function (app) {
 
     //Résultats
     app.get('/resultats', ResultatController.ListerResultat);
+    app.get('/detailDuResultat/:gpnum',ResultatController.DetailsDuResultat);
 
 
 // tout le reste
