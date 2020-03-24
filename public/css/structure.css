@@ -122,3 +122,7 @@
 	width: 150px;
 	height: 150px;
 }
+.profilPilote a {
+	display: inline-block;
+	padding-right: 10px;
+}
