@@ -142,3 +142,8 @@
 	display:inline-flex;
 	margin-right:20px;
 }
+
+	.profilPilote a {
+		display: inline-block;
+		padding-right: 10px;
+	}
