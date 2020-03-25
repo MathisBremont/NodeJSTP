@@ -43,7 +43,7 @@ module.exports.getInfoEcurie = function(data, callback){
 module.exports.getPilotesLieAEcurie = function(data, callback){
     db.getConnection(function(err, connexion){
         if(!err){
-            let sql = "select pilnom, pilprenom from pilote p inner join ecurie e on e.ecunum=p.ecunum where e.ecunum="+data;
+            let sql = "select pilnom, pilprenom, piltexte, phoadresse from pilote p inner join ecurie e on e.ecunum=p.ecunum inner join photo ph on ph.pilnum=p.pilnum where e.ecunum="+data;
 
             connexion.query(sql, callback);
             connexion.release();
