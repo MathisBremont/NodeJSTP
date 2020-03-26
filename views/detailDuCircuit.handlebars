@@ -1,5 +1,6 @@
-
-<table>
+<div class="columnCircuit">
+    <div class="affichageCircuit">
+<table class="tableauCircuit">
     <td>
         <img class="imgProfilPilote" src="/image/circuit/{{detailDuCircuit.ciradresseimage}}"/>
     </td>
@@ -9,12 +10,16 @@
         <p><b>Nombre de spectateurs :</b> {{detailDuCircuit.cirnbspectateurs}}</p>
         <p><b>Pays :</b> {{detailDuCircuit.paynom}}</p>
     </td>
-    <td>
+    </table>
+    <div class="listeDesCircuits">
         {{>listerCircuits}}
-    </td>
-</table>
+    </div>
+
+
+</div>
 
 <div class="longTextPilote">
     <p> {{detailDuCircuit.cirtext}}</p>
+</div>
 </div>
 

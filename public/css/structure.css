@@ -192,5 +192,41 @@
 		padding:8px;
 	}
 
-	.imageInfoBulle{
-		width:150px;
+	.imageInfoBulle {
+		width: 150px;
+	}
+	.affichageEcurie{
+
+		display: flex;
+	}
+	.affichageCircuit{
+		display:flex;
+	}
+
+	.tableauEcurie{
+		padding-right:100px;
+	}
+	.tableauEcurie td{
+		padding-right:20px;
+	}
+
+	.tableauCircuit td{
+		padding-right:20px;
+	}
+
+	.listeDesCircuits{
+
+		float: right;
+
+	}
+
+	.columnCircuit{
+		flex-direction: column;
+
+	}
+	.listeDesCircuits{
+
+		clear: both;
+
+	}
+	
