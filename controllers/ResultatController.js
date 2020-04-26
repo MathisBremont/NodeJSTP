@@ -12,7 +12,7 @@ module.exports.ListerResultat = function(request, response){
 			return;
 		}
 		response.listeResultat = result;
-		console.log(result);
+
 		response.render('listerResultat', response);
 	});
 
@@ -42,6 +42,8 @@ module.exports.DetailsDuResultat = function (request, response) {
 			}
 
 			response.detailDuResultat = result[0];
+
+
 
 			console.log(response.detailDuResultat);
 

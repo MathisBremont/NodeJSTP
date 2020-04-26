@@ -1,3 +1,5 @@
+
+<p><b>{{detailDuResultat.0.gpnom }}({{formatDate detailGP.0.gpdate 'DD/MM/YYYY'}})</b></p>
 <table class="resultats">
     <tr>
         <th>
@@ -16,19 +18,22 @@
     {{#each detailDuResultat}}
         <tr>
             <td>
-                <p>{{this.salut}}</p>
+                <p>{{this.ptplace}}</p>
             </td>
+
             <td>
                 <p>{{this.pilnom}} {{this.pilprenom}}</p>
             </td>
+
             <td>
                 <p>{{this.tempscourse}}</p>
             </td>
+
             <td>
-                <p>{{this.points}}</p>
+                <p>{{this.ptnbpointsplace}}</p>
             </td>
         </tr>
     {{/each}}
-
 </table>
+<p>{{detailDuResultat.0.gpcommentaire}}</p>
 <br class="myboth"/>
